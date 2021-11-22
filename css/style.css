@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	height: 100%;
+	width: 100vw;
+	box-sizing: border-box;
+	font-family: 'Muli', sans-serif;
+}
+.inputParent{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	padding: 0 8px;
+	border-radius: 8px;
+}
+button{
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.inputParent input{
+	border: none;
+	outline: none;
+	padding: 7px 10px;
+	margin-right: 6px;
+}
+.navbar{
+	padding: 16px 40px;
+	width: 100vw;
+}
+.elementContainer{
+	width: 100vw;
+	padding: 20px;
+	display: grid;
+	column-gap: 20px;
+	row-gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+}
+.elements{
+	width: 250px;
+	text-align: center;
+	padding: 10px 15px;
+	border-radius: 25px;
+	background-color: #DEE2E6;
+	cursor: pointer;
+	transition: 0.3s;
+	border: 1px solid rgba(0, 0, 0, 0);
+	margin: 0 auto;
+	position: relative;
+	perspective: 1000px;
+	height: 45px;
+}
+.elements:hover{
+	transform: scale(1.1, 1.1);
+	border: 1px solid rgb(97, 97, 97);
+}
+.linkContainer{
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	flex-direction: column;
+	background-color: white;
+	overflow-x: hidden;
+}
+.linkHeader{
+	padding-top: 2.5%;
+	padding-bottom: 1.5%;
+	text-align: center;
+}
+.image img{
+	height: 125px;
+	width: 125px;
+	border-radius: 50%;
+}
+.linkHeader .name{
+	margin-top: 10px;
+	font-size: 24px;
+	cursor: default;
+}
+.skills{
+	text-align: center;
+	width: 100%;
+}
+.linkBody{
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 30px;
+}
+.linkBody a{
+	display: flex;
+	padding: 15px 45px;
+	border-radius: 30px;
+	justify-content: space-between;
+	align-items: center;
+	width: 35%;
+	text-decoration: none;
+	transition: 0.4s;
+	color: white;
+	border: 1px solid transparent;
+	margin-top: 16px;
+}
+.linkBody a .icon{
+	font-size: 18px;
+}
+.linkBody a .link{
+	font-size: 16px;
+	font-weight: 600;
+}
+.twitter{
+	background-color: rgb(29, 161, 242);
+}
+.twitter:hover{
+	background-color: white;
+	color: rgb(	29, 161, 242);
+	border: 1px solid rgb(	29, 161, 242);
+}
+.instagram{
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+.instagram:hover{
+	background-color: white;
+	background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	border: 1px solid #dc2743;
+}
+.github{
+	background-color: #333;
+}
+.github:hover{
+	background-color: white;
+	color: #333;
+	border: 1px solid #333;
+}
+.linkedin{
+	background-color: #0e76a8 ;
+}
+.linkedin:hover{
+	background-color: white;
+	color: #0e76a8 ;
+	border: 1px solid #0e76a8 ;
+}
+.blogger{
+	background-color: #fc4f08  ;
+}
+.blogger:hover{
+	background-color: white;
+	color: #fc4f08 ;
+	border: 1px solid #fc4f08 ;
+}
+.youtube{
+	background-color: red  ;
+}
+.youtube:hover{
+	background-color: white;
+	color: red ;
+	border: 1px solid red ;
+}
+.closeContainer{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+}
+.closeContainer i{
+	font-size: 20px;
+}
+li{
+	list-style: none;
+}
+@media only screen and (max-width: 768px) {
+	.elements{
+		width: 325px;
+	}
+	.elementContainer{
+		grid-template-columns: 1fr;
+	}
+	.linkHeader{
+		padding: 3.5%;
+	}
+	.image img{
+		height: 110px;
+		width: 110px;
+	}
+	.linkBody a{
+		width: 70%;
+	}
+	.linkBody a .link{
+		width: 68px;
+		text-align: center;
+		position: relative;
+		left: -28%;
+	}
+}
