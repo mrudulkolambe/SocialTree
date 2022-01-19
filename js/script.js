@@ -71,6 +71,7 @@ function getId() {
 getId();
 
 function closeContainer() {
+    document.title = "Social Tree"
     elementContainer.style.display = "grid";
     linkContainer.style.display = "none";
     if (window.location.href.indexOf('?') > -1) {
