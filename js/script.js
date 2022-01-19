@@ -1,4 +1,3 @@
-console.log("Hello");
 let main = document.getElementById('main');
 let elementContainer = document.getElementById('elementContainer');
 let linkContainer = document.getElementById('linkContainer');
@@ -22,6 +21,7 @@ async function elementRender() {
 async function renderLinks(id) {
     history.pushState({ page: 1 }, "title 1", `?user=${id}`);
     elementContainer.style.display = "none";
+    document.title = `Social Tree - ${id}`
     linkContainer.style.display = "flex";
     let data = await getData();
     for (let i = 0; i < data.data.length; i++) {
@@ -36,7 +36,7 @@ async function renderLinks(id) {
                 ${data.data[i].user}
             </div>
         </div>
-        <div class="skills">${data.data[i].skills}</div>
+        <div class="skills">${data.data[i].position}</div>
         <div class="linkBody" id="linkBody"></div>
             `;
             renderLinkItems(data.data[i].links)
@@ -46,7 +46,6 @@ async function renderLinks(id) {
 
 function renderLinkItems(links) {
     linkBody.innerHTML = '';
-    console.log("hey")
     for (let i = 0; i < links.length; i++) {
         linkBody.innerHTML += `
         <a href="${links[i].link}" class="${links[i].class}" target="_blank">
@@ -72,15 +71,13 @@ function getId() {
 getId();
 
 function closeContainer() {
-    let length = history.length
-    if (length == 0) {
-        elementContainer.style.display = "grid";
-        linkContainer.style.display = "none";
-        window.history.go(-1);
-    } else {
-        window.location.href = '/';
+    elementContainer.style.display = "grid";
+    linkContainer.style.display = "none";
+    if (window.location.href.indexOf('?') > -1) {
+        history.pushState('', document.title, window.location.pathname);
     }
 }
+
 
 function search() {
     let input, filter, ul, li, span, i, txtValue;

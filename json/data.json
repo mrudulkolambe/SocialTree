@@ -1,0 +1,84 @@
+{
+    "data":[
+        {
+            "user": "Siddhi Bhanushali",
+            "img": "",
+            "position": "Hack Club SIGCE Founder",
+            "links": [
+                {
+                    "class": "linkedin",
+                    "icon": "<i class='bi bi-linkedin'></i>",
+                    "name": "LinkedIn",
+                    "link": "https://www.linkedin.com/in/siddhi-bhanushali-4178591b2/"
+                },
+                {
+                    "class": "github",
+                    "icon": "<i class='bi bi-github'></i>",
+                    "name": "GitHub",
+                    "link": "https://github.com/siddhi-244"
+                },
+                {
+                    "class": "twitter",
+                    "icon": "<i class='bi bi-twitter'></i>",
+                    "name": "Twitter",
+                    "link": "https://twitter.com/SiddhiB6"
+                },
+                {
+                    "class": "instagram",
+                    "icon": "<i class='bi bi-instagram'></i>",
+                    "name": "Instagram",
+                    "link": "https://instagram.com/the.perspective.seeker/"
+                },
+                {
+                    "class": "blogger",
+                    "icon": "<i class='fab fa-blogger-b'></i>",
+                    "name": "Blogger",
+                    "link": "https://pirogrammer1.blogspot.com/"
+                },
+                {
+                    "class": "youtube",
+                    "icon": "<i class='bi bi-youtube'></i>",
+                    "name": "Youtube",
+                    "link": "https://www.youtube.com/channel/UCx552qBEz4esUv5YWqh7RmQ"
+                },
+                {
+                    "class": "dev",
+                    "icon": "<i class='fab fa-dev'></i>",
+                    "name": "Dev",
+                    "link": "https://dev.to/siddhi244"
+                }
+            ]
+        },
+        {
+            "user": "Mrudul Kolambe",
+            "img": "",
+            "position": "Web-Development Lead",
+            "links": [
+                {
+                    "class": "linkedin",
+                    "icon": "<i class='bi bi-linkedin'></i>",
+                    "name": "LinkedIn",
+                    "link": "https://www.linkedin.com/in/mrudul-kolambe/"
+                },
+                {
+                    "class": "github",
+                    "icon": "<i class='bi bi-github'></i>",
+                    "name": "GitHub",
+                    "link": "https://github.com/mrudulkolambe/"
+                },
+                {
+                    "class": "twitter",
+                    "icon": "<i class='bi bi-twitter'></i>",
+                    "name": "Twitter",
+                    "link": "https://twitter.com/KolambeMrudul"
+                },
+                {
+                    "class": "instagram",
+                    "icon": "<i class='bi bi-instagram'></i>",
+                    "name": "Instagram",
+                    "link": "https://instagram.com/the.perspective.seeker/"
+                }
+            ]
+        }
+    ]
+}
