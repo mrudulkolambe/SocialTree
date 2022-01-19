@@ -3,7 +3,7 @@ let elementContainer = document.getElementById('elementContainer');
 let linkContainer = document.getElementById('linkContainer');
 
 async function getData() {
-    let jsonObj = await fetch("/json/data.json");
+    let jsonObj = await fetch("json/data.json");
     let response = await jsonObj.text();
     return JSON.parse(response);
 }
